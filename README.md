@@ -32,6 +32,16 @@ which also contains the Bokeh JS runtime.  This runtime is built on a port of
 of some higher-level canned plot layouts built on top of the Protovis
 framework.
 
+Get The Source
+==============
+With the git commandline:
+```
+git clone git://github.com/ContinuumIO/Bokeh.git
+```
+or as a [ZIP Archive](https://github.com/ContinuumIO/Bokeh/archive/master.zip)
+
+`cd` into the source directory.
+
 Dependencies
 ============
 
@@ -47,6 +57,8 @@ are using a distribution like [Anaconda Community Edition](https://store.continu
 [Python(X,Y)](http://code.google.com/p/pythonxy),
 then you already have most of them installed.
 
+`pip install -r requirements.txt` to install all dependencies.
+
  * [Chaco](https://github.com/enthought/chaco)
  * [Traits](https://github.com/enthought/traits)
  * [Pandas](https://github.com/pydata/pandas)
@@ -57,14 +69,13 @@ then you already have most of them installed.
  * [gevent-webockets](https://bitbucket.org/Jeffrey/gevent-websocket/src)
 
 
+
 Installation
 ============
 
-After installing the dependencies (chaco, etc.), run the following:
+After installing the dependencies (chaco, etc.), run the following in the source directory:
 
 ```
-git clone git://github.com/ContinuumIO/Bokeh.git
-cd Bokeh
 pip install .
 ```
 The setup.py will automatically grab the latest compiled javascript from github, so you don't need coffeescript in order to use Bokeh.
