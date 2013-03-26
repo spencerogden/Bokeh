@@ -38,6 +38,7 @@ With the git commandline:
 ```
 git clone git://github.com/ContinuumIO/Bokeh.git
 ```
+
 or as a [ZIP Archive](https://github.com/ContinuumIO/Bokeh/archive/master.zip)
 
 `cd` into the source directory.
@@ -58,19 +59,27 @@ are using a distribution like [Anaconda Community Edition](https://store.continu
 then you already have most of them installed.
 
 If not, you should install these either with `pip`:
-`pip install -r requirements.txt` to install all dependencies.
- or your distributions package manager.
- 
+
+```
+pip install -r requirements.txt
+```
+
+Or use your distributions package manager.
+
+Python Modules:
  * [Chaco](https://github.com/enthought/chaco)
  * [Traits](https://github.com/enthought/traits)
  * [Pandas](https://github.com/pydata/pandas)
  * [flask](http://flask.pocoo.org/)
- * [redis](http://redis.io/)
- * [redis-py](https://github.com/andymccurdy/redis-py)
  * [requests](http://docs.python-requests.org/en/latest/)
  * [gevent-webockets](https://bitbucket.org/Jeffrey/gevent-websocket/src)
+ * [redis-py](https://github.com/andymccurdy/redis-py) (optional)
 
+Other:
+ * [redis](http://redis.io/) (optional)
+ * [IPython](http://ipython.org/) (optional)
 
+Redis is required for dynamically linked graphs.
 
 Installation
 ============
@@ -107,11 +116,17 @@ Server Based Web Plotting Examples
  * navigate to `http://localhost:5006/bokeh`
  * execute `$ python examples/webplot_example.py`
 
-Static html dump based web plotting examples
+Static Html Based Web Plotting Examples
 ============================================
  * `$ python tests/web/facetgrid.py`
  * open up the generated `grid.html` in a web browser
 
+IPython Based Examples
+======================
+ * start Redis server according to your distro
+ * execute `python startlocal.py` in Bokeh source directory
+ * in another terminal `cd examples`
+ * execute `ipython notebook`
 
 What Does the Name "Bokeh" Mean?
 ================================
