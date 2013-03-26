@@ -57,8 +57,10 @@ are using a distribution like [Anaconda Community Edition](https://store.continu
 [Python(X,Y)](http://code.google.com/p/pythonxy),
 then you already have most of them installed.
 
+If not, you should install these either with `pip`:
 `pip install -r requirements.txt` to install all dependencies.
-
+ or your distributions package manager.
+ 
  * [Chaco](https://github.com/enthought/chaco)
  * [Traits](https://github.com/enthought/traits)
  * [Pandas](https://github.com/pydata/pandas)
