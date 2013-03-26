@@ -50,9 +50,11 @@ then you already have most of them installed.
  * [Chaco](https://github.com/enthought/chaco)
  * [Traits](https://github.com/enthought/traits)
  * [Pandas](https://github.com/pydata/pandas)
- * [flask]
- * [redis]
- * [requests]
+ * [flask](http://flask.pocoo.org/)
+ * [redis](http://redis.io/)
+ * [redis-py](https://github.com/andymccurdy/redis-py)
+ * [requests](http://docs.python-requests.org/en/latest/)
+ * [gevent-webockets](https://bitbucket.org/Jeffrey/gevent-websocket/src)
 
 
 Installation
